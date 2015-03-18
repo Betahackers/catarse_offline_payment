@@ -1,6 +1,6 @@
-# CatarseOfflinePayment [![Code Climate](https://codeclimate.com/github/catarse/catarse_offline_payment.png)](https://codeclimate.com/github/catarse/catarse_offline_payment)
+# CatarseOfflinePayment 
 
-Catarse paypal express integration with [Catarse](http://github.com/danielweinmann/catarse) crowdfunding platform
+Catarse offline payment integration with [Catarse](http://github.com/danielweinmann/catarse) crowdfunding platform
 
 ## Installation
 
@@ -25,23 +25,11 @@ If you are using the Rails 3.2.x on Catarse's code, you can use the version `1.0
 For Rails 4 support use the `2.0.0` version.
 
 
-### Configurations
-
-Create this configurations into Catarse database:
-
-    paypal_username, paypal_password and paypal_signature
-
-In Rails console, run this:
-
-    Configuration.create!(name: "paypal_username", value: "USERNAME")
-    Configuration.create!(name: "paypal_password", value: "PASSWORD")
-    Configuration.create!(name: "paypal_signature", value: "SIGNATURE")
-
 ## Development environment setup
 
 Clone the repository:
 
-    $ git clone git://github.com/devton/catarse_offline_payment.git
+    $ git clone git://github.com/betahackers/catarse_offline_payment.git
 
 Add the catarse code into test/dummy:
 
