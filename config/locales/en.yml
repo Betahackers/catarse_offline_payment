@@ -1,17 +1,18 @@
 en:
   projects:
     contributions:
-      refund:
-        success: 'Pedido de reembolso enviado com sucesso!'
-        error: 'OPS! Ocorreu um erro ao tentar enviar o pedido de reembolso.'
-      review:
-        paypal: 'PayPal'
-        international:
-          section_title: 'You will be directed to the PayPal site to complete payment.'
-          user_document_label: 'CPF / CNPJ (only for Brazilians)'
-          button: 'Redirect to PayPal'
-      checkout:
-        paypal_cancel: "Your PayPal payment was canceled. Please try again."
-        paypal_description: "Back project %{project_name} with %{value} (BRL)"
-        paypal_error: "Ooops. There was an error while sending your payment to PayPal. Please try again."
-        success: "Your back was successfully made. Thanks a lot!"
+      offline_payment:
+        refund:
+          success: 'Pedido de reembolso enviado com sucesso!'
+          error: 'OPS! Ocorreu um erro ao tentar enviar o pedido de reembolso.'
+        review:
+          offline_payment: 'Offline Payment'
+          international:
+            section_title: 'Once the campaign organizer confirms the receipt of the funds, your contribution will be confirmed and applied towards the camapign.'
+            user_document_label: 'Document number (NIE/Passport)'
+            button: 'Confirm contribution!'
+        checkout:
+          paypal_cancel: "Your offline payment was canceled. Please try again."
+          paypal_description: "Back project %{project_name} with %{value} (EUR)"
+          paypal_error: "Ooops. There was an error while recording your contribution. Please try again."
+          success: "Your contribution was successfully made. Thanks a lot!"

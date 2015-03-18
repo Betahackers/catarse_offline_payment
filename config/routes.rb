@@ -1,13 +1,10 @@
-CatarsePaypalExpress::Engine.routes.draw do
-  resources :paypal_express, only: [], path: 'payment/paypal_express' do
-    collection do
-      post :ipn
-    end
+CatarseOfflinePayment::Engine.routes.draw do
+  resources :offline_payment, only: [], path: 'payment/offline_payment' do
 
     member do
       get  :review
       post :pay
-      get  :success
+      # get  :success
       get  :cancel
     end
   end

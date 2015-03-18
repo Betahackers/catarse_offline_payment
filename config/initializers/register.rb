@@ -1,5 +1,5 @@
 begin
-  PaymentEngines.register(CatarsePaypalExpress::PaymentEngine.new)
+  PaymentEngines.register(CatarseOfflinePayment::PaymentEngine.new)
 rescue Exception => e
   puts "Error while registering payment engine: #{e}"
 end
