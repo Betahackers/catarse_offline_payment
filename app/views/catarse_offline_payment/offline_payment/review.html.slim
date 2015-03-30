@@ -8,7 +8,14 @@
         = text_field_tag 'user_document', nil, { autocomplete: 'off', class: 'w-input text-field', data: {mask: '999.999.999-99'} }
     .w-row
       .w-col.w-col-12
-        .card.card-message.fontsize-small.u-radius.zindex-10.u-marginbottom-30 = t('projects.contributions.offline_payment.review.international.section_title')
+        .card.card-message.fontsize-small.u-radius.zindex-10.u-marginbottom-30 
+          - if @project.try(:wait_for_success_to_collect_funds)
+            = t('projects.contributions.offline_payment.review.international.wait_for_sucess_to_pay')
+          - else
+            - if @project.try(:paypal_email_address).try(:present?)
+              = t('projects.contributions.offline_payment.review.international.will_receive_paypal_email')
+              br
+            = t('projects.contributions.offline_payment.review.international.dont_wait_for_sucess_to_pay')
     .w-row
       .w-col.w-col-push-3.w-col-6
         .loader.u-text-center.w-col.w-col-12.u-marginbottom-30 = image_tag "catarse_bootstrap/loader.gif"

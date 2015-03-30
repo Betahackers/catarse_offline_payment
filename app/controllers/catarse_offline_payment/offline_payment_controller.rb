@@ -6,8 +6,8 @@ class CatarseOfflinePayment::OfflinePaymentController < ApplicationController
   layout :false
 
   def review
+    @project = contribution.project if contribution
   end
-
 
   def pay
     begin
