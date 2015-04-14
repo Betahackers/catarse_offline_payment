@@ -9,6 +9,7 @@ en:
           offline_payment: 'Offline Payment'
           international:
             will_receive_paypal_email: 'You will receive an email with instructons on how to complete your donation via PayPal. '
+            will_receive_email: 'You will receive an email with instructons on how to complete your donation. '
             wait_for_sucess_to_pay: "IMPORTANT: The campaign organizer has chosen to collect donations only once the project is successfully funded. If successful, you will receive an email with instructions on how to complete your donation. Please take this commitment to donate seriously, as you would a legally binding agreement."
             dont_wait_for_sucess_to_pay: 'Once the campaign organizer confirms the receipt of the funds, your contribution will be confirmed and applied towards the camapign.'
             user_document_label: 'Document number (NIE/Passport)'
